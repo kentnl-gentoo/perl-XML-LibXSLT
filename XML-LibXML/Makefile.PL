@@ -1,4 +1,4 @@
-# $Id$
+# $Id: Makefile.PL,v 1.1 2001/03/11 12:39:47 matt Exp $
 
 use ExtUtils::MakeMaker;
 use Config;

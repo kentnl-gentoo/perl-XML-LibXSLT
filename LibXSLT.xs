@@ -1,4 +1,4 @@
-/* $Id$ */
+/* $Id: LibXSLT.xs,v 1.6 2001/03/12 20:20:22 matt Exp $ */
 
 #ifdef __cplusplus
 extern "C" {

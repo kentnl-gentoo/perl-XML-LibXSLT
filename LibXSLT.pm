@@ -1,4 +1,4 @@
-# $Id$
+# $Id: LibXSLT.pm,v 1.5 2001/03/12 20:30:48 matt Exp $
 
 package XML::LibXSLT;
 

@@ -1,4 +1,4 @@
-/* $Id$ */
+/* $Id: LibXML.xs,v 1.5 2001/03/12 20:21:15 matt Exp $ */
 
 #ifdef __cplusplus
 extern "C" {
