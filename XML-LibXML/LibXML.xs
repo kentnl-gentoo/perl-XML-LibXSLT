@@ -333,7 +333,7 @@ validity_warning(void * ctxt, const char * msg, ...)
 }
 
 xmlParserCtxtPtr
-get_context(SV * self)
+get_context2(SV * self)
 {
     SV ** ctxt_sv;
     ctxt_sv = hv_fetch((HV *)SvRV(self), "_context", 8, 0);
@@ -363,7 +363,7 @@ parse_stream(SV * self, SV * ioref)
     tbuff = newSV(0);
     tsize = newSViv(BUFSIZE);
     
-    ctxt = get_context(self);
+    ctxt = get_context2(self);
     
     while (!done) {
         int cnt;
@@ -599,7 +599,7 @@ _parse_string(self, string)
         int well_formed;
     CODE:
         ptr = SvPV(string, len);
-        ctxt = get_context(self);
+        ctxt = get_context2(self);
         xmlParseChunk(ctxt, ptr, len, 0);
         xmlParseChunk(ctxt, ptr, 0, 1);
         well_formed = ctxt->wellFormed;
@@ -644,7 +644,7 @@ _parse_file(self, filename)
 	    f = PerlIO_open(filename, "r");
 	}
 	if (f != NULL) {
-            ctxt = get_context(self);
+            ctxt = get_context2(self);
 	    res = PerlIO_read(f, chars, 4);
 	    if (res > 0) {
                 xmlParseChunk(ctxt, chars, res, 0);
