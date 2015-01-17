@@ -29,7 +29,7 @@ use Carp;
 
 require Exporter;
 
-$VERSION = '1.92';
+$VERSION = '1.93';
 
 require DynaLoader;
 
@@ -670,6 +670,14 @@ very end of section 5.4 of the XSLT specification for more details on
 recursion and detecting it. If your stylesheet or XML file requires
 seriously deep recursion, this is the way to set it. Default value is
 250.
+
+=item max_vars
+
+  XML::LibXSLT->max_vars(100_000);
+
+This option sets the maximum number of variables for a stylesheet. If your
+stylesheet or XML file requires many variables, this is the way to increase
+their limit. Default value is system-specific and may vary.
 
 =item debug_callback
 
