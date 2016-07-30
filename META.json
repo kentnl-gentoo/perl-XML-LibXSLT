@@ -4,7 +4,7 @@
       "Matt Sergeant"
    ],
    "dynamic_config" : 1,
-   "generated_by" : "ExtUtils::MakeMaker version 6.98, CPAN::Meta::Converter version 2.142060",
+   "generated_by" : "ExtUtils::MakeMaker version 7.16, CPAN::Meta::Converter version 2.150005",
    "license" : [
       "perl_5"
    ],
@@ -48,5 +48,6 @@
          "web" : "https://bitbucket.org/shlomif/perl-xml-libxslt"
       }
    },
-   "version" : "1.94"
+   "version" : "1.95",
+   "x_serialization_backend" : "JSON::PP version 2.27300"
 }
